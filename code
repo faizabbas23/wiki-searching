@@ -1,0 +1,10 @@
+import pyttsx3
+import wikipedia
+
+
+search = input("whats would you like to search ")
+x = (wikipedia.summary(search))
+
+engine = pyttsx3.init()
+engine.say(x)
+engine.runAndWait()
